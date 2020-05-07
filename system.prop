@@ -1,0 +1,9 @@
+ro.product.model=LG-H850
+ro.product.brand=lge
+ro.product.name=h1_global_com
+ro.product.device=h1
+ro.product.manufacturer=LGE
+ro.build.product=h1
+ro.hardware.keystore=msm8996
+persist.sys.usb.config=mtp,adb
+#ro.treble.enabled=true
