@@ -22,6 +22,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Screen Resolution
+TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2560
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := h850
 PRODUCT_MODEL := LG-H850
