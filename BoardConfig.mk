@@ -64,12 +64,12 @@ TW_INCLUDE_CRYPTO_FBE := true
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff loop.max_part=7
 BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1 androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
-
-TARGET_PREBUILT_KERNEL := device/lge/h850/prebuilt/kernel
+TARGET_KERNEL_SOURCE := kernel/lge/msm8996
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
@@ -110,4 +110,3 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Ignore LG's bootloader wipe commands
 TW_IGNORE_MISC_WIPE_DATA := true
-#
